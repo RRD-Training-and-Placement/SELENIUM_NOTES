@@ -41,7 +41,7 @@ Q. How to download and set up extent report?
 -> If your project is Maven then add dependecy in pom.xml file
 
    <dependency>
-	<groupId>com.aventstack</groupId>  		        <artifactId>extentreports</artifactId>
+	<groupId>com.aventstack</groupId>  		        	<artifactId>extentreports</artifactId>
 	<version>5.0.9</version>
    </dependency>
 --------------------------------------------
