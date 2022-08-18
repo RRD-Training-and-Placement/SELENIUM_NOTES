@@ -1,0 +1,29 @@
+End point URL: localhost:9090/clm-get-single/OC-2022-8-1023
+
+HTTP: Method: GET
+
+Response JSON
+{
+    "coverNoteNo": "HA-100123",
+    "clmNo": "OC-2022-8-1023",
+    "policyNo": "2311-5904-00-002",
+    "customerName": "Kartik",
+    "placeOfAccident": "Nashik",
+    "vehicalRegNo": "MH-12 RT 2632",
+    "licenNo": "MH-0619850034761",
+    "causeOfAccident": "Break Fail",
+    "dateOfBith": "2000-08-17",
+    "accidentDate": "2022-08-01",
+    "driveName": "Nayan Tara",
+    "mobileNo": "9764450273",
+    "workshopId": "1001",
+    "workshopCity": "Pune",
+    "delearClaimId": "PK-22-1801-0000456",
+    "delearMobileNo": "9764450273",
+    "delearFlag": "HONDA",
+    "regDate": "2022-08-17",
+    "message": "Payment has done so Closing a claim",
+    "clmStatus": "Closed",
+    "ack": "1",
+    "respmessage": "Data Available"
+}

@@ -1,0 +1,16 @@
+Service name: Appoint Surveyor
+End Point URL: localhost:9090/appoint-surveyor
+HTTP Method: POST
+
+Request Payload
+{
+   "surveyorId":"1001",
+   "surveyorName":"Kedar",
+   "claimId":"OC-2022-8-1023"
+}
+Response PayLoad
+{
+    "ack": "0",
+    "message": "Surveyor is already Appointed for given Claim number and Current Status is Closed",
+    "clmNo": "OC-2022-8-1023"
+}

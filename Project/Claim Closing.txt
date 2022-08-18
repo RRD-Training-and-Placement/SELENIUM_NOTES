@@ -1,0 +1,16 @@
+Service Name: Claim Closing
+End Point URL: localhost:9090/closeClm
+HTTP Method: PUT
+Request Payload
+
+{
+   "claimNo":"OC-2022-8-1023",
+   "closingRemark":"Payment has done so Closing a claim"
+}
+
+Response PayLoad
+{
+    "ack": "0",
+    "message": "Claim is already Closed",
+    "clmNo": "OC-2022-8-1023"
+}

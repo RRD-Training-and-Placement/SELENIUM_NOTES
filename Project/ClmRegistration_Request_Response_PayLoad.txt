@@ -1,0 +1,25 @@
+End point URL: localhost:9090/clm-register
+HTTP Method: Post
+
+Request JSON
+{
+    "coverNoteNo":"HA-100123",
+    "customerName": "Kartik",
+    "placeOfAccident": "Nashik",
+    "vehicalRegNo": "MH-12 RT 2632",
+    "licenNo": "MH-0619850034761",
+    "accidentDate":"2022-08-01",
+    "causeOfAccident": "Break Fail",
+    "dateOfBith": "2000-08-17",
+    "driveName":"Nayan Tara",
+    "mobileNo": "9764450273",
+    "workshopId":"1001",
+    "workshopCity":"Pune",
+    "delearClaimId":"PK-22-1801-0000456",
+    "delearMobileNo": "9764450273",
+    "delearFlag": "honda"
+}
+
+Response JSON
+
+

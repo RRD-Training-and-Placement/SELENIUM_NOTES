@@ -8,6 +8,7 @@ Note:
 3) For Ford Cover note start with FS
 4) For Maruti Cover Note start with MI
 5) Policy Number start with JI-year-month-sequence number
+6) Date Format should by yyyy-MM-dd
 ===============================================================================================
 Table Name:-JIPL_CLM_DTLS:
 
