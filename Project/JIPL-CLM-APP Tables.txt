@@ -1,0 +1,41 @@
+Table Name:-JIPL_POL_DTLS:
+create table JIPL_POL_DTLS(pol_no varchar(50) Primary Key,cover_note varchar(50) unique,start_date varchar(50) not null,end_date varchar(50)  not null,delear_flag varchar(50));
+
+insert into JIPL_POL_DTLS values('JI-2022-08-0001','HA-100123','2022-08-01','2023-08-01','HONDA');
+Note: 
+1) For Honda Cover note start with HA
+2) For Hyundai Cover note start with HY
+3) For Ford Cover note start with FS
+4) For Maruti Cover Note start with MI
+5) Policy Number start with JI-year-month-sequence number
+===============================================================================================
+Table Name:-JIPL_CLM_DTLS:
+
+create Table JIPL_CLM_DTLS(clm_no varchar(50),pol_no varchar(50),cover_note varchar(250),cust_name varchar(350),place_of_accident varchar(250),vehical_reg_no varchar(250),licen_no varchar(250),cause_of_accident varchar(500),dob varchar(50),date_of_accident varchar(50),driver_name varchar(250),cust_mobileno varchar(12),workshop_id varchar(50),workshop_city varchar(250),delear_clm_id varchar(250),delear_mob_no varchar(12),delear_flag varchar(50),CLM_REG_DATE varchar(50),reg_message varchar(1000),clm_status varchar(50),survey_id varchar(50),survey_app_date varchar(50),survey_done_date varchar(50),survey_compl_remark varchar(2000),doc_id varchar(50));
+
+Sequence Creation query
+
+create sequence clm_no_seq 
+start with 1000
+increment by 1
+================================================================================================
+Table Name:-JIPL_SURVEY_DTLS:
+create table JIPL_SURVEY_DTLS(survey_id varchar(50),surveyor_name varchar(250),entry_date varchar(50));
+
+insert into JIPL_SURVEY_DTLS VALUES(1001,'Kedar',TO_Char(sysdate,'YYYY-MM-DD'));
+==============================================================================================
+Table Name:-JIPL_DOC_DTLS:
+
+create table JIPL_DOC_DTLS(doc_id varchar(50) Primary key,clm_no varchar(50) not null,doc_type varchar(50), class_type varchar(50),doc_path varchar(250),doc_name varchar(250), entry_date varchar(50));
+
+create sequence doc_id_seq
+start with 1000
+increment by 1
+=========================================================
+Table Name:-JIPL_WORKSHOP_DTLS:
+create table JIPL_WORKSHOP_DTLS(workshop_id varchar(50) Primary key,workshop_name varchar(50) not null,city varchar(50),delear_name varchar(50),delear_mob varchar(50),delear_mail_id varchar(50));
+
+insert into JIPL_WORKSHOP_DTLS values(1000,'Vedant Honda','Pune','HONDA','9763550273',
+'vedant@gmail.com');
+==================================================
+
