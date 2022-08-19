@@ -1,0 +1,70 @@
+1) Google Drive Project Link
+https://drive.google.com/file/d/11yFRyopoml0F3DWS4V6xxTec8d_AiF7E/view?usp=sharing
+----------------------------
+2) Table Creation Script
+
+Create table jipl_clm_reg_details_phase2(clm_no varchar(50) primary key,
+cover_note varchar(50),pol_no varchar(50),vehical_reg_no varchar(50),
+licen_no varchar(50),delear_flag varchar(20),reg_message varchar(250),
+clm_status varchar(20), clm_reg_date varchar(50),dob varchar(50),
+date_of_accident varchar(50), cause_of_accident varchar(250), place_of_accident
+varchar(100),cust_name varchar(250),driver_name varchar(250),cust_mobileno varchar(10),
+workshop_id varchar(50),workshop_city varchar(50),delear_mob_no varchar(10),
+delear_clm_id varchar(50))
+================================
+Service Name  : Claim Registration
+
+Method: PUT
+URI:localhost:9090/clm-register
+input Pay Load
+{
+    "coverNoteNo":"HA-100123",
+    "customerName": "Kartik",
+    "placeOfAccident": "Nashik",
+    "vehicalRegNo": "MH-12-P-4001",
+    "licenNo": "MH-14-2011-0062821",
+    "accidentDate":"17-May-2022",
+    "causeOfAccident": "Break Fail",
+    "dateOfBith": "05-June-1986",
+    "driveName":"Nayan Tara",
+    "mobileNo": "9764450273",
+    "workshopId":"1010",
+    "workshopCity":"Nashik",
+    "delearClaimId":"PK-22-1801-0000456",
+    "delearMobileNo": "9764450273",
+    "delearFlag": "HONDA"
+}
+=====================================
+Service : Fetch single claim details
+URI localhost:9090/clm-get-single/1024
+method : GET
+=================================
+Service : Delete sinlge claim details
+URI: localhost:9090/clm-del-single/1024
+Method :Delete
+=============================================
+Service : Delete Multiple Claim details
+URI: localhost:9090/clm-del-multi
+Request Payload
+[
+  {
+    "claimNo":"1026",
+    "delearFlag":"HONDA"
+  },
+  {
+    "claimNo":"1027",
+    "delearFlag":"HONDA"
+  }
+]
+===============================================
+Service : Update single Claim details
+URI:localhost:9090/clm-update-single
+MEthod: PUT
+Request PayLoad
+
+  {
+    "clmno":"1026",
+    "delearFlag":"HONDA",
+    "custMobileNo":"9763440273",
+    "delearMobileNo":"9822506340"
+  }
